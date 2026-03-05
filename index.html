@@ -4,57 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Irena</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #f0f1f5;
+      --text: #2d2e36;
+      --text-dim: #5c5d6b;
+      --link: #2563eb;
+      --link-hover: #1d4ed8;
+      --border: rgba(45, 46, 54, 0.08);
+    }
     body {
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      font-family: Georgia, serif;
-      background: #faf8f5;
-      color: #333;
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      text-align: center;
     }
     header {
-      padding: 2rem;
-      text-align: center;
-      font-size: 2.5rem;
-      font-weight: bold;
-      letter-spacing: 0.1em;
-      border-bottom: 2px solid #ddd;
+      padding: 3rem 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .title {
+      font-family: 'Literata', Georgia, serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: 0.02em;
     }
     main {
       flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      padding: 2.5rem 1.5rem 3rem;
+      max-width: 520px;
+      margin: 0 auto;
+      width: 100%;
     }
     ul {
       list-style: none;
       text-align: center;
-      font-size: 1.25rem;
-      line-height: 2.2;
+    }
+    li {
+      font-size: 1.1rem;
+      line-height: 2.6;
+      border-bottom: 1px solid var(--border);
+    }
+    li:last-child { border-bottom: none; }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.2s ease;
+      display: inline-block;
+      padding: 0.15rem 0;
+    }
+    a:hover {
+      color: var(--link-hover);
+    }
+    a:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 2px;
+    }
+    footer {
+      padding: 1rem 1.5rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
     }
   </style>
 </head>
 <body>
-  <header>Irena</header>
+  <header>
+    <h1 class="title">Irena</h1>
+  </header>
   <main>
     <ul>
-      <li>Gangrena</li>
-      <li>Murena</li>
-      <li>Syrena</li>
-      <li>Antena</li>
-      <li>Domena</li>
-      <li>Migrena</li>
-      <li>Wycena</li>
-      <li>Cartagena</li>
-      <li>Wena</li>
-      <li>Arena</li>
-      <li>Zespół Sjogrena</li>
-      <li>Jeden z modeli Volkswagena</li>
-      <li>Maria Magdalena</li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Gangrena" target="_blank" rel="noopener noreferrer">Gangrena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Murena" target="_blank" rel="noopener noreferrer">Murena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Syrena" target="_blank" rel="noopener noreferrer">Syrena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Antena" target="_blank" rel="noopener noreferrer">Antena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Domena" target="_blank" rel="noopener noreferrer">Domena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Migrena" target="_blank" rel="noopener noreferrer">Migrena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Wycena" target="_blank" rel="noopener noreferrer">Wycena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Cartagena" target="_blank" rel="noopener noreferrer">Cartagena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Wena" target="_blank" rel="noopener noreferrer">Wena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Arena" target="_blank" rel="noopener noreferrer">Arena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Zesp%C3%B3%C5%82+Sj%C3%B6grena" target="_blank" rel="noopener noreferrer">Zespół Sjögrena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Volkswagen+modele" target="_blank" rel="noopener noreferrer">Jeden z modeli Volkswagena</a></li>
+      <li><a href="https://www.google.com/search?tbm=isch&q=Maria+Magdalena" target="_blank" rel="noopener noreferrer">Maria Magdalena</a></li>
     </ul>
   </main>
+  <footer>— www.irena.org.pl —</footer>
 </body>
 </html>
